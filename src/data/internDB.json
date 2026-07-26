@@ -1,0 +1,32 @@
+[
+  {
+    "certificateId": "TRN-INT-2024-001",
+    "name": "Jane Smith",
+    "role": "Frontend Engineering Intern",
+    "duration": "6 Months",
+    "startDate": "Jan 15, 2024",
+    "endDate": "Jul 15, 2024",
+    "status": "Completed with Excellence",
+    "skills": ["React.js", "UI/UX", "Tailwind CSS", "JavaScript"]
+  },
+  {
+    "certificateId": "TRN-INT-2024-002",
+    "name": "Alex Johnson",
+    "role": "Backend Engineering Intern",
+    "duration": "3 Months",
+    "startDate": "Mar 01, 2024",
+    "endDate": "May 31, 2024",
+    "status": "Completed successfully",
+    "skills": ["Node.js", "Express", "MongoDB", "API Design"]
+  },
+  {
+    "certificateId": "TRN-INT-2024-003",
+    "name": "Rahul Verma",
+    "role": "UI/UX Design Intern",
+    "duration": "4 Months",
+    "startDate": "Feb 10, 2024",
+    "endDate": "Jun 10, 2024",
+    "status": "Completed successfully",
+    "skills": ["Figma", "Wireframing", "User Research", "Prototyping"]
+  }
+]
