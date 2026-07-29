@@ -543,30 +543,190 @@
    RESPONSIVE & PRINT STYLES
    ======================================================== */
 @media (max-width: 768px) {
+  .verify-hero {
+    padding: calc(var(--nav-height, 64px) + 20px) 0 40px;
+  }
+
+  .verify-header {
+    margin-bottom: 24px;
+  }
+
+  .verify-title {
+    font-size: 2.1rem;
+  }
+
+  .verify-subtitle {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+  }
+
+  .verify-card {
+    padding: 16px 12px;
+    border-radius: 16px;
+  }
+
   .verify-input-group {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .verify-input-icon {
+    left: 16px;
+  }
+
+  .verify-input {
+    font-size: 15px;
+    padding: 14px 16px 14px 44px;
+    border-radius: 12px;
   }
 
   .verify-submit {
     padding: 14px;
     width: 100%;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  .verify-results {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .certificate-document {
+    padding: 18px 12px;
+    border-radius: 14px;
+  }
+
+  .cert-top-logo-wrap {
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+
+  .cert-top-logo {
+    height: 38px;
+    max-width: 220px;
+  }
+
+  .cert-status-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 14px;
+  }
+
+  .cert-authentic-tag {
+    font-size: 11px;
+  }
+
+  .cert-doc-title {
+    font-size: 1.15rem;
+  }
+
+  .cert-header-actions {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  .copy-link-btn, .print-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 8px;
+    font-size: 13px;
   }
 
   .cert-company-banner {
     grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 14px;
+  }
+
+  .company-info-item {
+    font-size: 12px;
+    line-height: 1.4;
+    word-break: break-word;
   }
 
   .cert-profile-hero {
     flex-direction: column;
     align-items: flex-start;
+    padding: 16px 12px;
+    gap: 14px;
+    margin: 14px 0;
+    border-radius: 12px;
+  }
+
+  .cert-student-name {
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+
+  .cert-role-badge {
+    font-size: 13px;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .cert-id-box {
     align-items: flex-start;
+    width: 100%;
+  }
+
+  .cert-id-code {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    word-break: break-all;
+    box-sizing: border-box;
   }
 
   .cert-details-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .cert-detail-card {
+    padding: 12px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .cert-detail-value {
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .cert-skills-section {
+    padding: 14px 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+
+  .cert-skills-list {
+    gap: 6px;
+  }
+
+  .cert-skill-pill {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .cert-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding-top: 16px;
+  }
+
+  .cert-footer-issuer {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
   }
 }
 

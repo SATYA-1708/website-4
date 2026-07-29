@@ -405,11 +405,11 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 768px) {
   :root {
-    --section-gap: 64px;
+    --section-gap: 48px;
   }
 
   .container {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   .hidden-mobile { display: none !important; }
@@ -417,7 +417,11 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   :root {
-    --section-gap: 48px;
+    --section-gap: 36px;
+  }
+
+  .container {
+    padding: 0 12px;
   }
 }
 
