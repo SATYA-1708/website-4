@@ -10,6 +10,7 @@ import WorkPage from './pages/WorkPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import VerifyPage from './pages/VerifyPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 /* Router assistant for window scroll & document title */
 function RouterAssistant() {
@@ -25,7 +26,12 @@ function RouterAssistant() {
       '/contact': 'Contact Us & Book Consultation — Trion Solutions',
       '/verify': 'Verify Internship Credential — Trion Solutions',
     };
-    document.title = titles[pathname] || 'Trion Solutions';
+    
+    if (pathname.startsWith('/verify')) {
+      document.title = 'Verify Internship Credential — Trion Solutions';
+    } else {
+      document.title = titles[pathname] || '404 Page Not Found — Trion Solutions';
+    }
 
     // Hash scroll or scroll to top
     if (hash) {
@@ -63,6 +69,8 @@ function AnimatedRoutes() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/verify" element={<VerifyPage />} />
+          <Route path="/verify/:id" element={<VerifyPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -82,3 +90,4 @@ function App() {
 }
 
 export default App;
+
