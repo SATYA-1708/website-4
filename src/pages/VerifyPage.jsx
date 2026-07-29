@@ -96,15 +96,17 @@ const VerifyPage = () => {
             <GlowCard className="verify-card">
               <form onSubmit={handleVerify} className="verify-form">
                 <div className="verify-input-group">
-                  <Search className="verify-input-icon" size={20} />
-                  <input
-                    type="text"
-                    value={certId}
-                    onChange={(e) => setCertId(e.target.value)}
-                    placeholder="Enter Certificate ID (e.g. TSI-INT-2026-1701)"
-                    className="verify-input"
-                    required
-                  />
+                  <div className="verify-input-wrapper">
+                    <Search className="verify-input-icon" size={20} />
+                    <input
+                      type="text"
+                      value={certId}
+                      onChange={(e) => setCertId(e.target.value)}
+                      placeholder="Enter Certificate ID (e.g. TSI-INT-2026-1701)"
+                      className="verify-input"
+                      required
+                    />
+                  </div>
                   <button 
                     type="submit" 
                     className="btn btn-accent verify-submit"
@@ -127,14 +129,14 @@ const VerifyPage = () => {
                     {result ? (
                       <div className="certificate-document" id="printable-certificate">
                         
-                        {/* 1. Top Centered Prominent Logo */}
+                        {/* 1. Top Centered Logo */}
                         <div className="cert-top-logo-wrap">
                           <img src="/logo-v3.png" alt="Trion Solutions Logo" className="cert-top-logo" />
                         </div>
 
-                        {/* 2. Verification Title & Header Actions */}
+                        {/* 2. Verification Centered Tag & Title */}
                         <div className="cert-status-header">
-                          <div>
+                          <div className="cert-status-title-wrap">
                             <div className="cert-authentic-tag">
                               <CheckCircle2 size={14} /> Official Verified Record
                             </div>
@@ -183,7 +185,7 @@ const VerifyPage = () => {
                           </div>
                         </div>
 
-                        {/* 4. Primary Intern Candidate Profile Header */}
+                        {/* 4. Primary Candidate Profile Header */}
                         <div className="cert-profile-hero">
                           <div className="cert-profile-main">
                             <span className="cert-meta-label">Intern Candidate</span>
